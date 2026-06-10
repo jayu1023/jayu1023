@@ -40,7 +40,7 @@ I'm currently **open to senior / staff Flutter roles** with EU companies — par
 
 ### 🎯 Why hire me
 
-- **Published, shipping, owned**: 5 live pub.dev packages — not toy repos. Real semver, real changelogs, real users. [pub.dev/publishers/jayu1023](https://pub.dev/packages?q=publisher%3Ajayu1023)
+- **Published, shipping, owned**: 5 live pub.dev packages — not toy repos. Real semver, real changelogs, real users. See the [pinned repos below](#-published-flutter-packages--pubdev).
 - **AI-native, not bolted-on**: I've shipped LLM features into production Flutter apps (cost observability, streaming UIs, agent flows) before most teams started.
 - **iOS 26 / Liquid Glass ready**: `liquid_glass_hig` was first-to-market on pub.dev within days of Apple's spec drop.
 - **EU-aligned**: I work 11:00–20:00 CET, ship in English, comfortable with GDPR / DMA / Apple privacy review.
@@ -52,7 +52,7 @@ I'm currently **open to senior / staff Flutter roles** with EU companies — par
 
 - 📧 **hello@uplers.com**
 - 🐙 GitHub: [@jayu1023](https://github.com/jayu1023)
-- 📦 pub.dev: [packages by jayu1023](https://pub.dev/packages?q=publisher%3Ajayu1023)
+- 📦 pub.dev packages: [streamdown](https://pub.dev/packages/streamdown) · [paywall_kit](https://pub.dev/packages/paywall_kit) · [llm_meter](https://pub.dev/packages/llm_meter) · [agent_kit](https://pub.dev/packages/agent_kit) · [liquid_glass_hig](https://pub.dev/packages/liquid_glass_hig)
 - 💼 LinkedIn: *(link from your LinkedIn URL field)*
 
 If you're a hiring manager in Stockholm, Gothenburg, Malmö, Copenhagen, Oslo, Helsinki, Amsterdam, Berlin, London — let's talk. Senior, Staff, or Tech Lead. Remote or relocation.
