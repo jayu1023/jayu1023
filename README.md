@@ -2,7 +2,7 @@
 
 **Senior Flutter / Dart Engineer** — building AI-native mobile products. Author of **5 pub.dev packages** powering the next generation of LLM-powered Flutter apps.
 
-📍 Ahmedabad, India · 🌍 Open to **remote roles in EU / Nordics / UK** · ✉️ hello@uplers.com
+📍 Ahmedabad, India · 🌍 Open to **remote roles in EU / Nordics / UK** · ✉️ limbanijay24@gmail.com
 
 ---
 
