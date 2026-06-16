@@ -50,7 +50,7 @@ I'm currently **open to senior / staff Flutter roles** with EU companies — par
 
 ### 📫 Reach me
 
-- 📧 **hello@uplers.com**
+- 📧 **limbanijay24@gmail.com**
 - 🐙 GitHub: [@jayu1023](https://github.com/jayu1023)
 - 📦 pub.dev packages: [streamdown](https://pub.dev/packages/streamdown) · [paywall_kit](https://pub.dev/packages/paywall_kit) · [llm_meter](https://pub.dev/packages/llm_meter) · [agent_kit](https://pub.dev/packages/agent_kit) · [liquid_glass_hig](https://pub.dev/packages/liquid_glass_hig)
 - 💼 LinkedIn: *(link from your LinkedIn URL field)*
