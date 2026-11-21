@@ -38,7 +38,11 @@ a claim — and a README that states what I did **not** verify.
 |---|---|---|
 | **[rag-service](https://github.com/jayu1023/rag-service)** | Hybrid-retrieval RAG service. FastAPI, Qdrant/pgvector, token-based chunking, BM25 + dense fused by RRF, cross-encoder re-ranking, SSE answers with inline citations. | Re-ranker measured at **hit@1 0.90 → 0.95, MRR 0.950 → 0.967**, for p50 9 ms → 143 ms. The eval corpus has 8 deliberate near-twin documents so wrong-document retrieval is a *scored* failure. |
 | **[agent-kit-server](https://github.com/jayu1023/agent-kit-server)** | The LangGraph backend [`agent_kit`](https://pub.dev/packages/agent_kit) was missing. `plan → act → observe → reflect`, 4 sandboxed tools, human approval before any write, MCP server. | The SSE protocol is tested **from Dart**, against the real published package — and that test found **two bugs the Python suite was structurally blind to**. |
-| **[lora-finetune-lab](https://github.com/jayu1023/lora-finetune-lab)** | LoRA + PEFT fine-tune for structured extraction, with majority-class baselines and a prediction-collapse diagnostic next to every metric. | My first result was a perfect **1.00** — I audited it, found the held-out split reused 100% of the label-carrying phrases, built the split that exposed it, and the honest number is **0.23**. |
+| **[lora-finetune-lab](https://github.com/jayu1023/lora-finetune-lab)** | LoRA + PEFT fine-tune for structured extraction, with majority-class baselines and a prediction-collapse diagnostic next to every metric. Adapter published: [**🤗 qwen2.5-0.5b-ticket-triage-lora**](https://huggingface.co/jayu1023/qwen2.5-0.5b-ticket-triage-lora). | My first result was a perfect **1.00** — I audited it, found the held-out split reused 100% of the label-carrying phrases, built the split that exposed it, and the honest number is **0.23**. |
+
+Both services carry **OpenTelemetry tracing** with a span tree captured into the repo
+(`docs/TRACE.md`) instead of a screenshot — diffable, regenerable, checkable. Eval runs log
+to **MLflow** and **Weights & Biases**, and the **LangSmith** OTLP export is verified.
 
 The common thread: every number is measured, every README has an *"Honest status"* section
 listing what I never verified, and the most interesting finding in each repo is usually the
@@ -50,7 +54,8 @@ one that undercuts it.
 
 **Mobile**: Flutter 3.x · Dart 3.x · Riverpod · Bloc · GoRouter · Cupertino + Material 3 · platform channels (Swift / Kotlin)
 **AI / LLM**: RAG · hybrid retrieval · re-ranking · embeddings · LangGraph agents · tool-calling · MCP · LoRA/PEFT fine-tuning · LLM evaluation
-**Python**: FastAPI · PyTorch · Transformers · Qdrant · pgvector · SSE streaming · pytest · MLflow
+**Python**: FastAPI · PyTorch · Transformers · PEFT · Qdrant · pgvector · SSE streaming · pytest
+**Observability**: OpenTelemetry · MLflow · Weights & Biases · LangSmith
 **Backend**: Firebase · Supabase · Node · Go · PostgreSQL · Redis
 **Native**: Swift / SwiftUI · Kotlin · iOS 26 · Apple HIG
 **Tooling**: GitHub Actions · Fastlane · Sentry · TestFlight · Xcode 16 · Android Studio
@@ -74,6 +79,7 @@ one that undercuts it.
 - 🐙 GitHub: [@jayu1023](https://github.com/jayu1023)
 - 📦 pub.dev: [streamdown](https://pub.dev/packages/streamdown) · [paywall_kit](https://pub.dev/packages/paywall_kit) · [llm_meter](https://pub.dev/packages/llm_meter) · [agent_kit](https://pub.dev/packages/agent_kit) · [liquid_glass_hig](https://pub.dev/packages/liquid_glass_hig) · [flutter_lighthouse](https://pub.dev/packages/flutter_lighthouse)
 - 🐍 Python: [rag-service](https://github.com/jayu1023/rag-service) · [agent-kit-server](https://github.com/jayu1023/agent-kit-server) · [lora-finetune-lab](https://github.com/jayu1023/lora-finetune-lab)
+- 🤗 Hugging Face: [qwen2.5-0.5b-ticket-triage-lora](https://huggingface.co/jayu1023/qwen2.5-0.5b-ticket-triage-lora)
 - 💼 LinkedIn: *(link from your LinkedIn URL field)*
 
 If you're a hiring manager in Stockholm, Gothenburg, Malmö, Copenhagen, Oslo, Helsinki, Amsterdam, Berlin, London — let's talk. Senior, Staff, or Tech Lead. Remote or relocation.
